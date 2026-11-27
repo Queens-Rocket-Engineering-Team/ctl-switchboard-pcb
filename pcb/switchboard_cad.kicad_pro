@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pcb-switchboard.kicad_pro",
+    "filename": "switchboard_cad.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -424,18 +424,26 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "pcb-switchboard.kicad_sch",
+        "filename": "switchboard_cad.kicad_sch",
         "name": "Root",
-        "uuid": "dc8c4aac-bfa2-4155-9c39-4330d3765b59"
+        "uuid": "ed88821d-2e34-46b9-8740-9f5e3400515c"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1,#PWR1-7,#PWR9-11,#PWR13-14,SW1-4,P1,R1-9,J1,C1-4,TP1,D4,AV202-206",
     "variants": []
   },
   "sheets": [
     [
-      "dc8c4aac-bfa2-4155-9c39-4330d3765b59",
+      "ed88821d-2e34-46b9-8740-9f5e3400515c",
       "Root"
+    ],
+    [
+      "f6b3e97e-ffb7-4bb5-86c2-3d0caa38d249",
+      "ESP32 Breakout"
+    ],
+    [
+      "70ea0f8d-56b7-4ef7-bd81-fbfd8a622781",
+      "Switches"
     ]
   ],
   "text_variables": {},
