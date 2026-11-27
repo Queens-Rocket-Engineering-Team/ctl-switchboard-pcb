@@ -1,0 +1,34 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "48ff9f40-f0bb-4701-932c-b93dd8e1936a")
+	(paper "A4")
+	(lib_symbols)
+	(text "- let's fire these LEDs digitally (more reliable, more control, more future-proof)\n- we are going to use a low-side switch circuit ( to switch the negative side of the LED to GND) using an ESP digital pin and an n-channel mosfet\nto act as an inverter. \n- when we write a digital HIGH to the pin, the n-mosfet will close the source (GND) and drain (LED_NEG) to close the circuit, and power the LED"
+		(exclude_from_sim no)
+		(at 45.212 41.148 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 158 0 6 1)
+			)
+			(justify left)
+		)
+		(uuid "ac212dd4-858f-4538-9e62-b0b5dd31f475")
+	)
+	(text "implementation notes\n"
+		(exclude_from_sim no)
+		(at 60.198 34.036 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+				(color 158 0 6 1)
+			)
+		)
+		(uuid "b1334590-1026-403d-965d-df89c91dda44")
+	)
+)

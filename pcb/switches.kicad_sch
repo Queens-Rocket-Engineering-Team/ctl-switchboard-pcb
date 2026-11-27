@@ -751,6 +751,84 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "- consider using a 4-pin connector here, and using two pins as described above for the switching circuitry (SIG, GND)\n, and then the other two for the LED circuitry\n\n- the LED circuitry can be done in the LED Indication sheet (see impl. notes there), \nyou can just route the other two pins as +5V and a hiearchial symbol for the switched ground"
+		(exclude_from_sim no)
+		(at 105.156 87.376 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 158 0 6 1)
+			)
+			(justify left)
+		)
+		(uuid "1dc13107-9215-4c08-9464-1cc37f6266a7")
+	)
+	(text "review notes"
+		(exclude_from_sim no)
+		(at 114.046 41.91 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+				(color 158 0 6 1)
+			)
+		)
+		(uuid "494fbbfb-0d6f-47ea-bac5-1d21275fb7d2")
+	)
+	(text "implementation notes"
+		(exclude_from_sim no)
+		(at 120.904 61.976 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+				(color 158 0 6 1)
+			)
+		)
+		(uuid "945efd3c-437d-4528-84db-b886c6099c6f")
+	)
+	(text "- an RC (resistor-capacitor) filter would also be useful here for debouncing\nthis stabilizes our signal and is formed with a series resistor and shunt capacitor on the singal line\n\n"
+		(exclude_from_sim no)
+		(at 105.156 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 158 0 6 1)
+			)
+			(justify left)
+		)
+		(uuid "a773c2ef-e1de-43d2-9d9b-fe93ecfd7fa4")
+	)
+	(text "- remember, the switches don't go on the PCB, \nwe are simply designing this around *connectors that would interface with the switches. \n- instead of using switch symbols, we can design around connector symbols (we'll look more into connector type when we get into layout)\n\n- try to think about what the pulldown (10k) resistors are doing here? do we need them?\n"
+		(exclude_from_sim no)
+		(at 105.156 50.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 158 0 6 1)
+			)
+			(justify left)
+		)
+		(uuid "fb455349-885a-433c-938e-d34344182155")
+	)
+	(text "- we defintely need a pullup resistor (10k) on the signal line\n- this establishes a default state for the signal pin. \n- when the switch is open (not pressed), we will see a logic HIGH when reading it in firmware, \nthis is because we have that resistor pulling it up. if we didn't, the pin would be floating.\n\n"
+		(exclude_from_sim no)
+		(at 105.41 70.612 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 158 0 6 1)
+			)
+			(justify left)
+		)
+		(uuid "fe2c3abe-388c-4f6c-afc8-cd12575a5d2c")
+	)
 	(junction
 		(at 38.1 95.25)
 		(diameter 0)

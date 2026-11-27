@@ -444,6 +444,10 @@
     [
       "70ea0f8d-56b7-4ef7-bd81-fbfd8a622781",
       "Switches"
+    ],
+    [
+      "73afe2a5-8bde-4104-9a19-f7898e52cec5",
+      "LED Indication"
     ]
   ],
   "text_variables": {},
